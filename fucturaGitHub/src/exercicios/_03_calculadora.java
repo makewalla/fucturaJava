@@ -9,10 +9,12 @@ public class _03_calculadora {
 		
 		double num1=0, num2=0;
 		int opcao;
+		
 		System.out.println("Escolha uma operação\n1 - para somar\n2 - para subtrair\n"
 				+ "3 - para divisão\n4 - para multiplicação\n5 - para saber se é divisivel por 3\n"
 				+ "6 - para saber se é par ou impar\n7 - para saber a raiz\n8 - para saber a potencia\n");
 		opcao = sc.nextInt();
+		
 
 		switch(opcao) {
 		
@@ -56,7 +58,7 @@ public class _03_calculadora {
 			System.out.println("informe um numero para saber se ele é impar ou para");
 			num1 =(int) sc.nextDouble();
 			if(num1%2==0) {
-				System.out.println("o numero"+num1+" é par");
+				System.out.println("o numero "+num1+" é par");
 			}else {
 				System.out.println("o numero "+num1+" é impar");
 			}
@@ -65,7 +67,7 @@ public class _03_calculadora {
 			System.out.println("informe o numero que deseja saber a raiz ");
 			num1 = sc.nextDouble();
 			if ((int)(Math.sqrt(num1))==(Math.sqrt(num1))) {
-			System.out.println("o numero "+num1+" tem raiz quadrada");
+			System.out.println("o numero "+num1+" tem raiz quadrada\na raiz é : "+Math.sqrt(num1) );
 			}else{
 			System.out.println("o numero "+num1+" não tem raiz quadrada");	
 			}
@@ -79,9 +81,10 @@ public class _03_calculadora {
 				System.out.println("o numero "+num1+" elevado a "+num2+" é igual a: "+(Math.pow(num1,num2)));				
 			}else {
 				System.out.println("a base não pode ser 0");
-			}			
-		sc.close();
+			}
 		}
+		sc.close();
+		
 		
 	}
 
