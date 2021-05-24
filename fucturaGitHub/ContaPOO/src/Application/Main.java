@@ -23,7 +23,7 @@ public class Main {
 		Conta ContaPessoaB = new Conta();
 		
 		while(opcao!=9) {
-		System.out.println("informe a opção desejada:\n1-depositar\n2-sacar\n3transferir\ninforme 9 para finalizar");
+		System.out.println("informe a opção desejada:\n1-Depositar\n2-Sacar\n3-Transferir\nInforme 9 para finalizar");
 		opcao=sc.nextInt();
 		if(opcao==1) {
 			System.out.println("informe a conta:");
@@ -64,7 +64,7 @@ public class Main {
 				System.out.println("Conta invalida\n");
 			}		
 		}if(opcao==3) {
-			System.out.println("informe a conta:");
+			System.out.println("informe a conta que você quer transferir o valor: ");
 			pessoa=sc.nextInt();
 			if(pessoa==1) {
 				System.out.println("Conta Pessoa A selecionada");
@@ -84,14 +84,14 @@ public class Main {
 		
 
 		}
-		
-		
-		
+
 		sc.close();
 		
 	}
 
 }
+
+
 //Conta p1 = new Conta();//3 o construtor força colocar os parametros ao criar o objeto para os atributos da sua classe
 
 		//p1.andar();//1
