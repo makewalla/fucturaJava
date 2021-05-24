@@ -26,7 +26,7 @@ public class Main {
 		System.out.println("informe a opção desejada:\n1-Depositar\n2-Sacar\n3-Transferir\nInforme 9 para finalizar");
 		opcao=sc.nextInt();
 		if(opcao==1) {
-			System.out.println("informe a conta:");
+			System.out.println("informe a conta:\n(para Conta Pessoa A digitar 1 para Conta Pessoa B digitar 2)");
 			pessoa=sc.nextInt();
 			if(pessoa==1) {
 				System.out.println("Conta Pessoa A selecionada");
@@ -42,7 +42,7 @@ public class Main {
 				System.out.println("Conta invalida\n");
 			}
 		}if(opcao==2) {
-			System.out.println("informe a conta:");
+			System.out.println("informe a conta:\n(para Conta Pessoa A digitar 1 para Conta Pessoa B digitar 2)");
 			pessoa=sc.nextInt();
 			if(pessoa==1) {
 				System.out.println("Conta Pessoa A selecionada");
@@ -64,7 +64,7 @@ public class Main {
 				System.out.println("Conta invalida\n");
 			}		
 		}if(opcao==3) {
-			System.out.println("informe a conta que você quer transferir o valor: ");
+			System.out.println("informe de qual conta será RETIRADA o valor para ser transferido: \n(para Conta Pessoa A digitar 1 para Conta Pessoa B digitar 2)");
 			pessoa=sc.nextInt();
 			if(pessoa==1) {
 				System.out.println("Conta Pessoa A selecionada");
